@@ -7,6 +7,7 @@ setup(
     author_email='yjg30737@gmail.com',
     license='MIT',
     packages=find_packages(),
+    package_data={'pyqt_foldable_item_list_widget.ico': ['down-arrow.svg', 'up-arrow.svg']},
     description='PyQt QListWidget which itemWidget is foldable',
     url='https://github.com/yjg30737/pyqt-foldable-item-list-widget.git',
     install_requires=[

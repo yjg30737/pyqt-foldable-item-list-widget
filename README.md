@@ -47,3 +47,8 @@ if __name__ == "__main__":
     widget.show()
     app.exec_()
 ```
+
+Result
+
+![python 2022-02-14 오전 11_16_52](https://user-images.githubusercontent.com/55078043/153788861-fea13fd4-475f-4112-bd0c-411a0936b479.png)
+

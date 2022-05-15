@@ -5,10 +5,10 @@ PyQt QListWidget which itemWidget is foldable
 * PyQt5 >= 5.8
 
 ## Setup
-```pip3 install git+https://github.com/yjg30737/pyqt-foldable-item-list-widget.git --upgrade```
+`python -m pip install pyqt-foldable-item-list-widget`
 
 ## Included Package
-* <a href="https://github.com/yjg30737/pyqt-resource-helper.git">pyqt-resource-helper</a> // to show the library's icon from main module
+* <a href="https://github.com/yjg30737/pyqt-svg-icon-pushbutton.git">pyqt-svg-icon-pushbutton</a>
 
 ## Example
 Code Sample

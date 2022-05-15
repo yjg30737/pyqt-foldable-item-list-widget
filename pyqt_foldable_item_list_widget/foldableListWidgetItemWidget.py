@@ -43,12 +43,11 @@ class FoldableListWidgetItemWidget(QWidget):
         item = ''
         ico = ''
         if f:
-            ico = 'ico/up-arrow.svg'
+            self.__arrowBtn.setIcon('ico/up-arrow.svg')
             item = self.__unfoldedItem
         else:
-            ico = 'ico/down-arrow.svg'
+            self.__arrowBtn.setIcon('ico/down-arrow.svg')
             item = self.__foldedItem
-        self.__arrowBtn.setIcon(ico)
         self.__leftWidget.setCurrentWidget(item)
         self.setFixedHeight(item.sizeHint().height())
         self.foldToggled.emit(self.__idx)

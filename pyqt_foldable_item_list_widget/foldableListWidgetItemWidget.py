@@ -1,7 +1,6 @@
 from PyQt5.QtCore import pyqtSignal
-from PyQt5.QtGui import QIcon
-from PyQt5.QtWidgets import QWidget, QPushButton, QHBoxLayout, QStackedWidget, QSizePolicy
-from pyqt_resource_helper import PyQtResourceHelper
+from PyQt5.QtWidgets import QWidget, QHBoxLayout, QStackedWidget, QSizePolicy
+from pyqt_svg_icon_pushbutton import SvgIconPushButton
 
 
 class FoldableListWidgetItemWidget(QWidget):
@@ -15,8 +14,8 @@ class FoldableListWidgetItemWidget(QWidget):
         self.__initUi()
 
     def __initUi(self):
-        self.__arrowBtn = QPushButton()
-        PyQtResourceHelper.setIcon([self.__arrowBtn], ['ico/down-arrow.svg'])
+        self.__arrowBtn = SvgIconPushButton()
+        self.__arrowBtn.setIcon('ico/down-arrow.svg')
 
         self.__arrowBtn.setCheckable(True)
         self.__arrowBtn.toggled.connect(self.__foldToggled)
@@ -49,7 +48,7 @@ class FoldableListWidgetItemWidget(QWidget):
         else:
             ico = 'ico/down-arrow.svg'
             item = self.__foldedItem
-        PyQtResourceHelper.setIcon([self.__arrowBtn], [ico])
+        self.__arrowBtn.setIcon(ico)
         self.__leftWidget.setCurrentWidget(item)
         self.setFixedHeight(item.sizeHint().height())
         self.foldToggled.emit(self.__idx)

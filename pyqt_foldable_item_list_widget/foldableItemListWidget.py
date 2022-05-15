@@ -1,6 +1,5 @@
 from PyQt5.QtCore import QSize
-from PyQt5.QtWidgets import QListWidget, QWidget, QApplication, QVBoxLayout, QPushButton, QListWidgetItem, \
-    QLineEdit, QTextEdit
+from PyQt5.QtWidgets import QListWidget, QListWidgetItem
 
 from pyqt_foldable_item_list_widget.foldableListWidgetItemWidget import FoldableListWidgetItemWidget
 

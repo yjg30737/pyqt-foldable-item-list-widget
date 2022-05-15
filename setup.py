@@ -12,6 +12,7 @@ setup(
     url='https://github.com/yjg30737/pyqt-foldable-item-list-widget.git',
     install_requires=[
         'PyQt5>=5.8',
-        'pyqt-resource-helper @ git+https://git@github.com/yjg30737/pyqt-resource-helper.git@main'
+        'pyqt-resource-helper>=0.0.1',
+        'pyqt-svg-icon-pushbutton>=0.0.1'
     ]
 )

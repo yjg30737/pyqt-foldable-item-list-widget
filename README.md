@@ -8,7 +8,7 @@ PyQt QListWidget which itemWidget is foldable
 `python -m pip install pyqt-foldable-item-list-widget`
 
 ## Included Package
-* <a href="https://github.com/yjg30737/pyqt-svg-icon-pushbutton.git">pyqt-svg-icon-pushbutton</a>
+* <a href="https://github.com/yjg30737/pyqt-svg-button.git">pyqt-svg-button</a>
 
 ## Example
 Code Sample

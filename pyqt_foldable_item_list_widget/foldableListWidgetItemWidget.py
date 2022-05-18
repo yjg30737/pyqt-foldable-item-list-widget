@@ -1,6 +1,6 @@
 from PyQt5.QtCore import pyqtSignal
 from PyQt5.QtWidgets import QWidget, QHBoxLayout, QStackedWidget, QSizePolicy
-from pyqt_svg_icon_pushbutton import SvgIconPushButton
+from pyqt_svg_button import SvgButton
 
 
 class FoldableListWidgetItemWidget(QWidget):
@@ -14,7 +14,7 @@ class FoldableListWidgetItemWidget(QWidget):
         self.__initUi()
 
     def __initUi(self):
-        self.__arrowBtn = SvgIconPushButton()
+        self.__arrowBtn = SvgButton()
         self.__arrowBtn.setIcon('ico/down-arrow.svg')
 
         self.__arrowBtn.setCheckable(True)
